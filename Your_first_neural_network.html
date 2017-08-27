@@ -13985,14 +13985,11 @@ height=263
 
             <span class="c1"># TODO: Output error - Replace this value with your calculations.</span>
             <span class="n">error</span> <span class="o">=</span> <span class="n">y</span> <span class="o">-</span> <span class="n">final_outputs</span> <span class="c1"># Output layer error is the difference between desired target and actual output.</span>
-            
-            <span class="c1"># TODO: Calculate the hidden layer&#39;s contribution to the error</span>
- <span class="c1">#           hidden_error = np.dot(error, self.weights_hidden_to_output)</span>
-            
+                        
             <span class="c1"># TODO: Backpropagated error terms - Replace these values with your calculations.</span>
             <span class="n">output_error_term</span> <span class="o">=</span> <span class="n">error</span>
 
-<span class="c1">#            hidden_error = np.dot(output_error_term, self.weights_hidden_to_output)</span>
+            <span class="c1"># TODO: Calculate the hidden layer&#39;s contribution to the error</span>
             <span class="n">hidden_error</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">weights_hidden_to_output</span><span class="p">,</span> <span class="n">output_error_term</span><span class="p">)</span>
             
             <span class="n">hidden_error_term</span> <span class="o">=</span> <span class="n">hidden_error</span> <span class="o">*</span> <span class="p">(</span><span class="n">hidden_outputs</span><span class="p">)</span> \
@@ -14279,12 +14276,6 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">3000</span><span class="p">])</span>
 <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Loss vs Iterations 2&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-
-
-<span class="c1">#plt.plot(losses[&#39;train&#39;], label=&#39;Training loss&#39;)</span>
-<span class="c1">#plt.plot(losses[&#39;validation&#39;], label=&#39;Validation loss&#39;)</span>
-<span class="c1">#plt.legend()</span>
-<span class="c1">#_ = plt.ylim()</span>
 </pre></div>
 
 </div>
